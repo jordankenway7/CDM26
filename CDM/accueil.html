@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title> accueil </title>
+        <link href="style.css" rel="stylesheet">
+        
+
+    </head>
+
+    <body class="page-accueil">
+
+        <div class="banniere"> <img src="image/banniereCDM.png"> </div>
+
+       
+
+             <nav class="menu">
+ 
+
+  <div class="menu-toggle" onclick="document.querySelector('.menu').classList.toggle('active')">
+    ☰
+  </div>
+
+  <ul class="menu-links">
+    <li><a href="accueil.html">Accueil</a></li>
+    <li><a href="groupe.html">Groupes</a></li>
+    <li><a href="match.html">Matchs</a></li>
+    <li><a href="equipe.html">Équipes</a></li>
+    <li><a href="resultat.html">Résultats</a></li>
+    <li><a href="finale.html">Finale</a></li>
+  </ul>
+</nav>
+
+    <div class="container">
+
+        <a href="accueil.html" class="card">
+            <img src="image/accueil.png" alt="Image 1">
+        </a>
+
+
+        <a href="match.html" class="card">
+            <img src="image/match.png" alt="Image 1">
+        </a>
+
+        
+
+        <a href="equipe.html" class="card">
+            <img src="image/equipe.png" alt="Image 3">
+        </a>
+
+        <a href="resultat.html" class="card">
+            <img src="image/resultat.png" alt="Image 4">
+        </a>
+
+        <a href="groupe.html" class="card">
+            <img src="image/groupe.png" alt="Image 2">
+        </a>
+
+        <a href="finale.html" class="card">
+            <img src="image/finale.png" alt="Image 4">
+        </a>
+
+
+    </div>
+
+
+<footer class="footer">
+  <img src="image/footer.png" alt="Footer Coupe du Monde">
+</footer>
+
+
+
+<button id="scrollTopBtn">↑</button>
+
+<script>
+const btn = document.getElementById("scrollTopBtn");
+
+// afficher bouton quand on descend
+window.onscroll = function () {
+  if (document.documentElement.scrollTop > 200) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+// remonter en haut
+btn.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+};
+</script>
+
+
+
+
+    </body>
+    
+</html>
+

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title> equipe </title>
+        <link href="style.css" rel="stylesheet">
+
+    </head>
+
+         <body>
+
+                    <div class="banniere"> <img src="image/banniereCDM.png"> </div>
+
+               <nav class="menu">
+ 
+
+  <div class="menu-toggle" onclick="document.querySelector('.menu').classList.toggle('active')">
+    ☰
+  </div>
+
+  <ul class="menu-links">
+    <li><a href="accueil.html">Accueil</a></li>
+    <li><a href="groupe.html">Groupes</a></li>
+    <li><a href="match.html">Matchs</a></li>
+    <li><a href="equipe.html">Équipes</a></li>
+    <li><a href="resultat.html">Résultats</a></li>
+    <li><a href="finale.html">Finale</a></li>
+  </ul>
+</nav>
+
+            <div class="teams-container">
+
+<!-- Canada -->
+<div class="team-card" onclick="togglePlayers('canada')">
+    <img src="image/drapeau/Canada.png" alt="Canada">
+    <h3>Canada</h3>
+    <ul class="players" id="canada">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Mexique -->
+<div class="team-card" onclick="togglePlayers('mexique')">
+    <img src="image/drapeau/Mexique.png" alt="Mexique">
+    <h3>Mexique</h3>
+    <ul class="players" id="mexique">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- États-Unis -->
+<div class="team-card" onclick="togglePlayers('etatsunis')">
+    <img src="image/drapeau/usa.png" alt="États Unis">
+    <h3>États Unis</h3>
+    <ul class="players" id="etatsunis">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Afrique du Sud -->
+<div class="team-card" onclick="togglePlayers('afriquedusud')">
+    <img src="image/drapeau/Afrique_du_sud.png" alt="Afrique du Sud">
+    <h3>Afrique du Sud</h3>
+    <ul class="players" id="afriquedusud">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Algérie -->
+<div class="team-card" onclick="togglePlayers('algerie')">
+    <img src="image/drapeau/Algerie.png" alt="Algérie">
+    <h3>Algérie</h3>
+    <ul class="players" id="algerie">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Allemagne -->
+<div class="team-card" onclick="togglePlayers('allemagne')">
+    <img src="image/drapeau/Allemagne.png" alt="Allemagne">
+    <h3>Allemagne</h3>
+    <ul class="players" id="allemagne">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Angleterre -->
+<div class="team-card" onclick="togglePlayers('angleterre')">
+    <img src="image/drapeau/Angleterre.png" alt="Angleterre">
+    <h3>Angleterre</h3>
+    <ul class="players" id="angleterre">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Arabie Saoudite -->
+<div class="team-card" onclick="togglePlayers('arabiesaoudite')">
+    <img src="image/drapeau/Arabie_Saoudite.png" alt="Arabie Saoudite">
+    <h3>Arabie Saoudite</h3>
+    <ul class="players" id="arabiesaoudite">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Argentine -->
+<div class="team-card" onclick="togglePlayers('argentine')">
+    <img src="image/drapeau/Argentine.png" alt="Argentine">
+    <h3>Argentine</h3>
+    <ul class="players" id="argentine">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Australie -->
+<div class="team-card" onclick="togglePlayers('australie')">
+    <img src="image/drapeau/Australie.png" alt="Australie">
+    <h3>Australie</h3>
+    <ul class="players" id="australie">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Autriche -->
+<div class="team-card" onclick="togglePlayers('autriche')">
+    <img src="image/drapeau/Autriche.png" alt="Autriche">
+    <h3>Autriche</h3>
+    <ul class="players" id="autriche">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Belgique -->
+<div class="team-card" onclick="togglePlayers('belgique')">
+    <img src="image/drapeau/Belgique.png" alt="Belgique">
+    <h3>Belgique</h3>
+    <ul class="players" id="belgique">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Brésil -->
+<div class="team-card" onclick="togglePlayers('bresil')">
+    <img src="image/drapeau/Bresil.png" alt="Brésil">
+    <h3>Brésil</h3>
+    <ul class="players" id="bresil">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Cap Vert -->
+<div class="team-card" onclick="togglePlayers('capvert')">
+    <img src="image/drapeau/Cap_Vert.png" alt="Cap Vert">
+    <h3>Cap Vert</h3>
+    <ul class="players" id="capvert">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Colombie -->
+<div class="team-card" onclick="togglePlayers('colombie')">
+    <img src="image/drapeau/Colombie.png" alt="Colombie">
+    <h3>Colombie</h3>
+    <ul class="players" id="colombie">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Croatie -->
+<div class="team-card" onclick="togglePlayers('croatie')">
+    <img src="image/drapeau/Croatie.png" alt="Croatie">
+    <h3>Croatie</h3>
+    <ul class="players" id="croatie">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Curaçao -->
+<div class="team-card" onclick="togglePlayers('curacao')">
+    <img src="image/drapeau/Curacao.png" alt="Curaçao">
+    <h3>Curaçao</h3>
+    <ul class="players" id="curacao">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Côte d'Ivoire -->
+<div class="team-card" onclick="togglePlayers('cotedivoire')">
+    <img src="image/drapeau/Cote_Ivoire.png" alt="Côte d'Ivoire">
+    <h3>Côte d'Ivoire</h3>
+    <ul class="players" id="cotedivoire">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Espagne -->
+<div class="team-card" onclick="togglePlayers('espagne')">
+    <img src="image/drapeau/Espagne.png" alt="Espagne">
+    <h3>Espagne</h3>
+    <ul class="players" id="espagne">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- France -->
+<div class="team-card" onclick="togglePlayers('france')">
+    <img src="image/drapeau/France.png" alt="France">
+    <h3>France</h3>
+    <ul class="players" id="france">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Ghana -->
+<div class="team-card" onclick="togglePlayers('ghana')">
+    <img src="image/drapeau/Ghana.png" alt="Ghana">
+    <h3>Ghana</h3>
+    <ul class="players" id="ghana">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Haïti -->
+<div class="team-card" onclick="togglePlayers('haiti')">
+    <img src="image/drapeau/Haiti.png" alt="Haïti">
+    <h3>Haïti</h3>
+    <ul class="players" id="haiti">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Iran -->
+<div class="team-card" onclick="togglePlayers('iran')">
+    <img src="image/drapeau/Iran.png" alt="Iran">
+    <h3>Iran</h3>
+    <ul class="players" id="iran">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Japon -->
+<div class="team-card" onclick="togglePlayers('japon')">
+    <img src="image/drapeau/Japon.png" alt="Japon">
+    <h3>Japon</h3>
+    <ul class="players" id="japon">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Jordanie -->
+<div class="team-card" onclick="togglePlayers('jordanie')">
+    <img src="image/drapeau/Jordanie.png" alt="Jordanie">
+    <h3>Jordanie</h3>
+    <ul class="players" id="jordanie">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Maroc -->
+<div class="team-card" onclick="togglePlayers('maroc')">
+    <img src="image/drapeau/Maroc.png" alt="Maroc">
+    <h3>Maroc</h3>
+    <ul class="players" id="maroc">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Norvège -->
+<div class="team-card" onclick="togglePlayers('norvege')">
+    <img src="image/drapeau/Norvege.png" alt="Norvège">
+    <h3>Norvège</h3>
+    <ul class="players" id="norvege">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Nouvelle Zélande -->
+<div class="team-card" onclick="togglePlayers('nouvellezlande')">
+    <img src="image/drapeau/Nouvelle_zelande.png" alt="Nouvelle Zélande">
+    <h3>Nouvelle Zélande</h3>
+    <ul class="players" id="nouvellezlande">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Ouzbékistan -->
+<div class="team-card" onclick="togglePlayers('ouzbekistan')">
+    <img src="image/drapeau/Ouzbekistan.png" alt="Ouzbékistan">
+    <h3>Ouzbékistan</h3>
+    <ul class="players" id="ouzbekistan">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Panamá -->
+<div class="team-card" onclick="togglePlayers('panama')">
+    <img src="image/drapeau/Panama.png" alt="Panamá">
+    <h3>Panamá</h3>
+    <ul class="players" id="panama">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Paraguay -->
+<div class="team-card" onclick="togglePlayers('paraguay')">
+    <img src="image/drapeau/Paraguay.png" alt="Paraguay">
+    <h3>Paraguay</h3>
+    <ul class="players" id="paraguay">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Pays Bas -->
+<div class="team-card" onclick="togglePlayers('paysbas')">
+    <img src="image/drapeau/Pays_Bas.png" alt="Pays Bas">
+    <h3>Pays Bas</h3>
+    <ul class="players" id="paysbas">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Portugal -->
+<div class="team-card" onclick="togglePlayers('portugal')">
+    <img src="image/drapeau/Portugal.png" alt="Portugal">
+    <h3>Portugal</h3>
+    <ul class="players" id="portugal">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Qatar -->
+<div class="team-card" onclick="togglePlayers('qatar')">
+    <img src="image/drapeau/Qatar.png" alt="Qatar">
+    <h3>Qatar</h3>
+    <ul class="players" id="qatar">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- République de Corée -->
+<div class="team-card" onclick="togglePlayers('coree')">
+    <img src="image/drapeau/coree.png" alt="République de Corée">
+    <h3>République de Corée</h3>
+    <ul class="players" id="coree">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Suisse -->
+<div class="team-card" onclick="togglePlayers('suisse')">
+    <img src="image/drapeau/Suisse.png" alt="Suisse">
+    <h3>Suisse</h3>
+    <ul class="players" id="suisse">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Sénégal -->
+<div class="team-card" onclick="togglePlayers('senegal')">
+    <img src="image/drapeau/Senegal.png" alt="Sénégal">
+    <h3>Sénégal</h3>
+    <ul class="players" id="senegal">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Tunisie -->
+<div class="team-card" onclick="togglePlayers('tunisie')">
+    <img src="image/drapeau/Tunisie.png" alt="Tunisie">
+    <h3>Tunisie</h3>
+    <ul class="players" id="tunisie">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Uruguay -->
+<div class="team-card" onclick="togglePlayers('uruguay')">
+    <img src="image/drapeau/Uruguay.png" alt="Uruguay">
+    <h3>Uruguay</h3>
+    <ul class="players" id="uruguay">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Écosse -->
+<div class="team-card" onclick="togglePlayers('ecosse')">
+    <img src="image/drapeau/ecosse.png" alt="Écosse">
+    <h3>Écosse</h3>
+    <ul class="players" id="ecosse">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Égypte -->
+<div class="team-card" onclick="togglePlayers('egypte')">
+    <img src="image/drapeau/egypte.png" alt="Égypte">
+    <h3>Égypte</h3>
+    <ul class="players" id="egypte">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+<!-- Équateur -->
+<div class="team-card" onclick="togglePlayers('equateur')">
+    <img src="image/drapeau/equateur.png" alt="Équateur">
+    <h3>Équateur</h3>
+    <ul class="players" id="equateur">
+        <li>Joueur 1</li>
+        <li>...</li>
+        <li>Joueur 25</li>
+    </ul>
+</div>
+
+</div>
+
+<footer class="footer">
+  <img src="image/footer.png" alt="Footer Coupe du Monde">
+</footer>
+
+<script>
+function togglePlayers(id) {
+    const list = document.getElementById(id);
+    if (!list) return;
+    list.classList.toggle("show");
+}
+</script>
+
+<button id="scrollTopBtn">↑</button>
+
+<script>
+const btn = document.getElementById("scrollTopBtn");
+
+// afficher bouton quand on descend
+window.onscroll = function () {
+  if (document.documentElement.scrollTop > 200) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+// remonter en haut
+btn.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+};
+</script>
+
+        </body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="style.css" rel="stylesheet">
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background:#f4f4f4;
+}
+
+.header{
+  background:#4C6DA9;
+  color:white;
+  padding:20px;
+  text-align:center;
+  font-size:22px;
+  font-weight:bold;
+}
+
+.container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:25px;
+  padding:25px;
+}
+
+.stage{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
+
+.stage-block{
+  background:#4C6DA9;
+  width:32%;
+  min-width:320px;
+  border-radius:15px;
+  padding:15px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.25);
+}
+
+.stage-title{
+  text-align:center;
+  font-size:20px;
+  font-weight:bold;
+  color:white;
+  margin-bottom:15px;
+  border-bottom:2px solid rgba(255,255,255,0.3);
+  padding-bottom:8px;
+}
+
+.match{
+  background:#8FA9D6;
+  margin-bottom:10px;
+  padding:10px;
+  border-radius:10px;
+  color:white;
+  font-size:14px;
+}
+
+.match strong{
+  background:#fbbf24;
+  color:#0f172a;
+  padding:2px 6px;
+  border-radius:5px;
+  margin-right:6px;
+}
+
+@media(max-width:1024px){
+  .stage-block{width:48%;}
+}
+
+@media(max-width:650px){
+  .stage-block{width:100%;}
+}
+
+</style>
+
+</head>
+
+<body>
+
+        <div class="banniere"> <img src="image/banniereCDM.png"> </div>
+
+       
+
+             <nav class="menu">
+ 
+
+  <div class="menu-toggle" onclick="document.querySelector('.menu').classList.toggle('active')">
+    ☰
+  </div>
+
+  <ul class="menu-links">
+    <li><a href="accueil.html">Accueil</a></li>
+    <li><a href="groupe.html">Groupes</a></li>
+    <li><a href="match.html">Matchs</a></li>
+    <li><a href="equipe.html">Équipes</a></li>
+    <li><a href="resultat.html">Résultats</a></li>
+    <li><a href="finale.html">Finale</a></li>
+  </ul>
+</nav>
+
+
+
+<div class="container">
+
+<!-- ===================== 16èmes de finale (16 matchs) ===================== -->
+<div class="stage">
+  <div class="stage-block">
+    <div class="stage-title">16èmes de finale</div>
+
+    <div class="match"><strong>73</strong> 2e A - 2e B (Los Angeles 15h)</div>
+    <div class="match"><strong>74</strong> 1er E - 3e A/B/C/D/F (Boston 16h30)</div>
+    <div class="match"><strong>75</strong> 1er F - 2e C (Monterrey 21h)</div>
+    <div class="match"><strong>76</strong> 1er C - 2e F (Houston 13h)</div>
+    <div class="match"><strong>77</strong> 1er I - 3e groupes (New York 17h)</div>
+    <div class="match"><strong>78</strong> 2e E - 2e I (Dallas 13h)</div>
+    <div class="match"><strong>79</strong> 1er A - 3e groupes (Mexico 21h)</div>
+    <div class="match"><strong>80</strong> 1er L - 3e groupes (Atlanta 12h)</div>
+    <div class="match"><strong>81</strong> 1er D - 3e groupes (San Francisco 20h)</div>
+    <div class="match"><strong>82</strong> 1er G - 3e groupes (Seattle 16h)</div>
+    <div class="match"><strong>83</strong> 2e K - 2e L (Toronto 19h)</div>
+    <div class="match"><strong>84</strong> 1er H - 2e J (Los Angeles 15h)</div>
+    <div class="match"><strong>85</strong> 1er B - 3e groupes (Vancouver 23h)</div>
+    <div class="match"><strong>86</strong> 1er J - 2e H (Miami 18h)</div>
+    <div class="match"><strong>87</strong> 1er K - 3e groupes (Kansas City 21h30)</div>
+    <div class="match"><strong>88</strong> qualification à confirmer</div>
+  </div>
+</div>
+
+<!-- ===================== HUITIÈMES (8 matchs) ===================== -->
+<div class="stage">
+  <div class="stage-block">
+    <div class="stage-title">Huitièmes de finale</div>
+
+    <div class="match"><strong>89</strong> match élimination</div>
+    <div class="match"><strong>90</strong> match élimination</div>
+    <div class="match"><strong>91</strong> match élimination</div>
+    <div class="match"><strong>92</strong> match élimination</div>
+    <div class="match"><strong>93</strong> match élimination</div>
+    <div class="match"><strong>94</strong> match élimination</div>
+    <div class="match"><strong>95</strong> match élimination</div>
+    <div class="match"><strong>96</strong> match élimination</div>
+  </div>
+</div>
+
+<!-- ===================== QUARTS (4 matchs) ===================== -->
+<div class="stage">
+  <div class="stage-block">
+    <div class="stage-title">Quarts de finale</div>
+
+    <div class="match"><strong>97</strong> match élimination</div>
+    <div class="match"><strong>98</strong> match élimination</div>
+    <div class="match"><strong>99</strong> match élimination</div>
+    <div class="match"><strong>100</strong> match élimination</div>
+  </div>
+</div>
+
+<!-- ===================== DEMI (2 matchs) ===================== -->
+<div class="stage">
+  <div class="stage-block">
+    <div class="stage-title">Demi-finales</div>
+
+    <div class="match"><strong>101</strong> Demi-finale</div>
+    <div class="match"><strong>102</strong> Demi-finale</div>
+  </div>
+</div>
+
+<!-- ===================== PETITE FINALE ===================== -->
+<div class="stage">
+  <div class="stage-block">
+    <div class="stage-title">Petite finale</div>
+
+    <div class="match"><strong>103</strong> Match pour la 3e place</div>
+  </div>
+</div>
+
+<!-- ===================== GRANDE FINALE ===================== -->
+<div class="stage">
+  <div class="stage-block">
+    <div class="stage-title"> Finale </div>
+
+    <div class="match"><strong>104</strong> Finale</div>
+  </div>
+</div>
+
+</div>
+
+<footer class="footer">
+  <img src="image/footer.png" alt="Footer Coupe du Monde">
+</footer>
+
+
+<button id="scrollTopBtn">↑</button>
+
+<script>
+const btn = document.getElementById("scrollTopBtn");
+
+// afficher bouton quand on descend
+window.onscroll = function () {
+  if (document.documentElement.scrollTop > 200) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+// remonter en haut
+btn.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+};
+</script>
+
+</body>
+</html>
